@@ -1,0 +1,3872 @@
+{
+	"name": "All Threat Actors MITRE w/ Sigma Rules",
+	"version": "3.0",
+	"domain": "mitre-enterprise",
+	"description": "",
+	"filters": {
+		"stages": [
+			"act"
+		],
+		"platforms": [
+			"Windows",
+			"Linux",
+			"macOS"
+		]
+	},
+	"sorting": 3,
+	"layout": {
+		"layout": "flat",
+		"showID": false,
+		"showName": true
+	},
+	"hideDisabled": false,
+	"techniques": [
+		{
+			"techniqueID": "T1548",
+			"tactic": "privilege-escalation",
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1548",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1548.002",
+			"tactic": "privilege-escalation",
+			"score": 8,
+			"color": "",
+			"comment": "win_uac_fodhelper.yml\nwin_wsreset_uac_bypass.yml\nwin_uac_wsreset.yml\nwin_uac_cmstp.yml\nwin_susp_powershell_empire_uac_bypass.yml\nwin_cmstp_com_object_access.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1548.002",
+			"tactic": "defense-evasion",
+			"score": 8,
+			"color": "",
+			"comment": "win_uac_fodhelper.yml\nwin_wsreset_uac_bypass.yml\nwin_uac_wsreset.yml\nwin_uac_cmstp.yml\nwin_susp_powershell_empire_uac_bypass.yml\nwin_cmstp_com_object_access.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1134",
+			"tactic": "defense-evasion",
+			"score": 1,
+			"color": "",
+			"comment": "win_using_sc_to_change_sevice_image_path_by_non_admin.yml\nwin_possible_privilege_escalation_using_rotten_potato.yml\nwin_meterpreter_or_cobaltstrike_getsystem_service_start.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1134",
+			"tactic": "privilege-escalation",
+			"score": 1,
+			"color": "",
+			"comment": "win_using_sc_to_change_sevice_image_path_by_non_admin.yml\nwin_possible_privilege_escalation_using_rotten_potato.yml\nwin_meterpreter_or_cobaltstrike_getsystem_service_start.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1134.002",
+			"tactic": "defense-evasion",
+			"score": 2,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1134.002",
+			"tactic": "privilege-escalation",
+			"score": 2,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1134.005",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "win_susp_add_sid_history.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1134.005",
+			"tactic": "privilege-escalation",
+			"color": "",
+			"comment": "win_susp_add_sid_history.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1087",
+			"tactic": "discovery",
+			"color": "",
+			"comment": "cisco_cli_collect_data.yml\nzeek-dce_rpc_domain_user_enumeration.yml\nwin_hack_bloodhound.yml\nwin_susp_commands_recon_activity.yml\nwin_local_system_owner_account_discovery.yml\nwin_susp_recon_activity.yml\nwin_susp_net_recon_activity.yml\nwin_account_discovery.yml\nwin_alert_ruler.yml\nwin_global_catalog_enumeration.yml\nwin_ad_user_enumeration.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1087.001",
+			"tactic": "discovery",
+			"score": 9,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1087.002",
+			"tactic": "discovery",
+			"score": 9,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1087.003",
+			"tactic": "discovery",
+			"score": 2,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1098",
+			"tactic": "persistence",
+			"score": 3,
+			"color": "",
+			"comment": "cisco_cli_local_accounts.yml\naws_iam_backdoor_users_keys.yml\nwin_apt_judgement_panda_gtr19.yml\nwin_alert_ad_user_backdoors.yml\nwin_susp_dsrm_password_change.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1098.002",
+			"tactic": "persistence",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1071",
+			"tactic": "command-and-control",
+			"score": 3,
+			"color": "",
+			"comment": "net_susp_dns_txt_exec_strings.yml\nsysmon_apt_muddywater_dnstunnel.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1071.001",
+			"tactic": "command-and-control",
+			"score": 33,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1071.002",
+			"tactic": "command-and-control",
+			"score": 4,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1071.003",
+			"tactic": "command-and-control",
+			"score": 2,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1071.004",
+			"tactic": "command-and-control",
+			"score": 8,
+			"color": "",
+			"comment": "net_susp_dns_txt_exec_strings.yml\nsysmon_apt_muddywater_dnstunnel.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1010",
+			"tactic": "discovery",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1560",
+			"tactic": "collection",
+			"score": 8,
+			"color": "",
+			"comment": "cisco_cli_moving_data.yml\nlnx_data_compressed.yml\npowershell_data_compressed.yml\nwin_susp_compression_params.yml\nwin_data_compressed_with_rar.yml\nwin_apt_judgement_panda_gtr19.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1560.001",
+			"tactic": "collection",
+			"score": 16,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1560.002",
+			"tactic": "collection",
+			"score": 2,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1560.003",
+			"tactic": "collection",
+			"score": 4,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1123",
+			"tactic": "collection",
+			"score": 1,
+			"color": "",
+			"comment": "sysmon_susp_mic_cam_access.yml\nwin_powershell_audio_capture.yml\nwin_soundrec_audio_capture.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1119",
+			"tactic": "collection",
+			"score": 8,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1020",
+			"tactic": "exfiltration",
+			"score": 3,
+			"color": "",
+			"comment": "aws_ec2_download_userdata.yml\naws_rds_public_db_restore.yml\naws_rds_change_master_password.yml\nwin_susp_compression_params.yml\nwin_exfiltration_and_tunneling_tools_execution.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1197",
+			"tactic": "defense-evasion",
+			"score": 3,
+			"color": "",
+			"comment": "win_process_creation_bitsadmin_download.yml\nwin_powershell_bitsjob.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1197",
+			"tactic": "persistence",
+			"score": 3,
+			"color": "",
+			"comment": "win_process_creation_bitsadmin_download.yml\nwin_powershell_bitsjob.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1547",
+			"tactic": "persistence",
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1547",
+			"tactic": "privilege-escalation",
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1547.001",
+			"tactic": "persistence",
+			"score": 38,
+			"color": "",
+			"comment": "win_susp_direct_asep_reg_keys_modification.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1547.001",
+			"tactic": "privilege-escalation",
+			"score": 38,
+			"color": "",
+			"comment": "win_susp_direct_asep_reg_keys_modification.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1547.004",
+			"tactic": "persistence",
+			"score": 2,
+			"color": "",
+			"comment": "zeek_dce_rpc_mitre_bzar_persistence.yml\npowershell_winlogon_helper_dll.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1547.004",
+			"tactic": "privilege-escalation",
+			"score": 2,
+			"color": "",
+			"comment": "zeek_dce_rpc_mitre_bzar_persistence.yml\npowershell_winlogon_helper_dll.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1547.008",
+			"tactic": "persistence",
+			"color": "",
+			"comment": "sysmon_susp_lsass_dll_load.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1547.008",
+			"tactic": "privilege-escalation",
+			"color": "",
+			"comment": "sysmon_susp_lsass_dll_load.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1547.009",
+			"tactic": "persistence",
+			"score": 7,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1547.009",
+			"tactic": "privilege-escalation",
+			"score": 7,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1037",
+			"tactic": "persistence",
+			"score": 1,
+			"color": "",
+			"comment": "sysmon_logon_scripts_userinitmprlogonscript_reg.yml\nsysmon_logon_scripts_userinitmprlogonscript_proc.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1037",
+			"tactic": "privilege-escalation",
+			"score": 1,
+			"color": "",
+			"comment": "sysmon_logon_scripts_userinitmprlogonscript_reg.yml\nsysmon_logon_scripts_userinitmprlogonscript_proc.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1037.001",
+			"tactic": "persistence",
+			"score": 1,
+			"color": "",
+			"comment": "sysmon_logon_scripts_userinitmprlogonscript_reg.yml\nsysmon_logon_scripts_userinitmprlogonscript_proc.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1037.001",
+			"tactic": "privilege-escalation",
+			"score": 1,
+			"color": "",
+			"comment": "sysmon_logon_scripts_userinitmprlogonscript_reg.yml\nsysmon_logon_scripts_userinitmprlogonscript_proc.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1176",
+			"tactic": "persistence",
+			"score": 2,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1110",
+			"tactic": "credential-access",
+			"score": 5,
+			"color": "",
+			"comment": "generic_brute_force.yml\nwin_metasploit_authentication.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1110.002",
+			"tactic": "credential-access",
+			"score": 3,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1110.003",
+			"tactic": "credential-access",
+			"score": 3,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1115",
+			"tactic": "collection",
+			"score": 2,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1059",
+			"tactic": "execution",
+			"score": 11,
+			"color": "",
+			"comment": "lnx_apt_equationgroup_lnx.yml\naws_ec2_startup_script_change.yml\npowershell_shellcode_b64.yml\nwin_crime_fireball.yml\nwin_task_folder_evasion.yml\nwin_apt_sofacy.yml\nwin_office_spawn_exe_from_users_directory.yml\nwin_susp_outlook.yml\nwin_apt_babyshark.yml\nwin_office_shell.yml\nwin_hwp_exploits.yml\nwin_apt_ke3chang_regadd.yml\nwin_apt_equationgroup_dll_u_load.yml\nwin_redmimicry_winnti_proc.yml\nwin_susp_cmd_http_appdata.yml\nwin_apt_zxshell.yml\nwin_commandline_path_traversal.yml\nwin_susp_rasdial_activity.yml\nwin_alert_ruler.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1059.001",
+			"tactic": "execution",
+			"score": 43,
+			"color": "",
+			"comment": "powershell_downgrade_attack.yml\npowershell_suspicious_download.yml\npowershell_suspicious_keywords.yml\npowershell_malicious_commandlets.yml\npowershell_remote_powershell_session.yml\npowershell_prompt_credentials.yml\npowershell_nishang_malicious_commandlets.yml\npowershell_exe_calling_ps.yml\npowershell_suspicious_invocation_generic.yml\npowershell_malicious_keywords.yml\npowershell_xor_commandline.yml\npowershell_psattack.yml\npowershell_suspicious_invocation_specific.yml\npowershell_alternate_powershell_hosts.yml\npowershell_create_local_user.yml\nwin_powershell_xor_commandline.yml\nwin_susp_powershell_parent_combo.yml\nwin_powershell_amsi_bypass.yml\nwin_mmc_spawn_shell.yml\nwin_susp_powershell_enc_cmd.yml\nwin_susp_powershell_hidden_b64_cmd.yml\nwin_powershell_download.yml\nwin_susp_powershell_empire_launch.yml\nwin_encoded_frombase64string.yml\nwin_wmi_spwns_powershell.yml\nwin_powersploit_empire_schtasks.yml\nwin_powershell_suspicious_parameter_variation.yml\nwin_susp_crackmapexec_powershell_obfuscation.yml\nwin_non_interactive_powershell.yml\nwin_susp_ps_appdata.yml\nwin_apt_babyshark.yml\nwin_susp_crackmapexec_execution.yml\nwin_powershell_downgrade_attack.yml\nwin_apt_apt29_thinktanks.yml\nwin_susp_covenant.yml\nwin_susp_ps_downloadfile.yml\nwin_apt_turla_comrat_may20.yml\nwin_shell_spawn_susp_program.yml\nwin_susp_cmd_http_appdata.yml\nwin_remote_powershell_session_process.yml\nwin_powershell_dll_execution.yml\nsysmon_susp_powershell_rundll32.yml\nsysmon_alternate_powershell_hosts_pipe.yml\nwin_remote_powershell_session.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1059.003",
+			"tactic": "execution",
+			"score": 40,
+			"color": "",
+			"comment": "win_mmc_spawn_shell.yml\nwin_apt_babyshark.yml\nwin_susp_crackmapexec_execution.yml\nwin_office_shell.yml\nwin_encoded_iex.yml\nwin_commandline_path_traversal.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1059.004",
+			"tactic": "execution",
+			"score": 2,
+			"color": "",
+			"comment": "win_mmc_spawn_shell.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1059.005",
+			"tactic": "execution",
+			"score": 26,
+			"color": "",
+			"comment": "win_susp_script_execution.yml\nwin_mmc_spawn_shell.yml\nwin_apt_cloudhopper.yml\nwin_task_folder_evasion.yml\nwin_malware_script_dropper.yml\nwin_shell_spawn_susp_program.yml\nwin_susp_cmd_http_appdata.yml\nsysmon_wmi_susp_scripting.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1059.006",
+			"tactic": "execution",
+			"score": 5,
+			"color": "",
+			"comment": "win_susp_file_characteristics.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1059.007",
+			"tactic": "execution",
+			"score": 7,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1136",
+			"tactic": "persistence",
+			"color": "",
+			"comment": "cisco_cli_local_accounts.yml\nlnx_auditd_create_account.yml\npowershell_create_local_user.yml\nwin_net_user_add.yml\nwin_user_creation.yml\nwin_susp_local_anon_logon_created.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1136.001",
+			"tactic": "persistence",
+			"score": 5,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1136.002",
+			"tactic": "persistence",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1543",
+			"tactic": "persistence",
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1543",
+			"tactic": "privilege-escalation",
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1543.002",
+			"tactic": "persistence",
+			"score": 1,
+			"color": "",
+			"comment": "lnx_pers_systemd_reload.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1543.002",
+			"tactic": "privilege-escalation",
+			"score": 1,
+			"color": "",
+			"comment": "lnx_pers_systemd_reload.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1543.003",
+			"tactic": "persistence",
+			"score": 16,
+			"color": "",
+			"comment": "win_susp_service_path_modification.yml\nwin_new_service_creation.yml\nwin_apt_carbonpaper_turla.yml\nwin_apt_stonedrill.yml\nwin_mal_service_installs.yml\nwin_rare_service_installs.yml\nwin_apt_turla_service_png.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1543.003",
+			"tactic": "privilege-escalation",
+			"score": 16,
+			"color": "",
+			"comment": "win_susp_service_path_modification.yml\nwin_new_service_creation.yml\nwin_apt_carbonpaper_turla.yml\nwin_apt_stonedrill.yml\nwin_mal_service_installs.yml\nwin_rare_service_installs.yml\nwin_apt_turla_service_png.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1555",
+			"tactic": "credential-access",
+			"score": 7,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1555.003",
+			"tactic": "credential-access",
+			"score": 15,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1485",
+			"tactic": "impact",
+			"score": 3,
+			"color": "",
+			"comment": "lnx_dd_delete_file.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1132",
+			"tactic": "command-and-control",
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1132.001",
+			"tactic": "command-and-control",
+			"score": 8,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1486",
+			"tactic": "impact",
+			"score": 3,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1565",
+			"tactic": "impact",
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1565.001",
+			"tactic": "impact",
+			"score": 2,
+			"color": "",
+			"comment": "cisco_cli_moving_data.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1565.002",
+			"tactic": "impact",
+			"score": 1,
+			"color": "",
+			"comment": "cisco_cli_modify_config.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1565.003",
+			"tactic": "impact",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1001",
+			"tactic": "command-and-control",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1001.002",
+			"tactic": "command-and-control",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1001.003",
+			"tactic": "command-and-control",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1074",
+			"tactic": "collection",
+			"score": 1,
+			"color": "",
+			"comment": "cisco_cli_moving_data.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1074.001",
+			"tactic": "collection",
+			"score": 13,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1074.002",
+			"tactic": "collection",
+			"score": 5,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1030",
+			"tactic": "exfiltration",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1213",
+			"tactic": "collection",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1213.002",
+			"tactic": "collection",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1005",
+			"tactic": "collection",
+			"score": 21,
+			"color": "",
+			"comment": "cisco_cli_collect_data.yml\naws_ec2_vm_export_failure.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1039",
+			"tactic": "collection",
+			"score": 3,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1025",
+			"tactic": "collection",
+			"score": 3,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1491",
+			"tactic": "impact",
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1491.001",
+			"tactic": "impact",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1140",
+			"tactic": "defense-evasion",
+			"score": 18,
+			"color": "",
+			"comment": "win_encoded_frombase64string.yml\nwin_susp_certutil_command.yml\nwin_encoded_iex.yml\nwin_susp_cli_escape.yml\nwin_susp_ping_hex_ip.yml\nwin_susp_mshta_execution.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1006",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "sysmon_raw_disk_access_using_illegitimate_tools.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1561",
+			"tactic": "impact",
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1561.001",
+			"tactic": "impact",
+			"score": 1,
+			"color": "",
+			"comment": "cisco_cli_file_deletion.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1561.002",
+			"tactic": "impact",
+			"score": 4,
+			"color": "",
+			"comment": "cisco_cli_file_deletion.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1482",
+			"tactic": "discovery",
+			"score": 1,
+			"color": "",
+			"comment": "win_malware_trickbot_recon_activity.yml\nwin_dsquery_domain_trust_discovery.yml\nwin_trust_discovery.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1189",
+			"tactic": "initial-access",
+			"score": 17,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1568",
+			"tactic": "command-and-control",
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1568.002",
+			"tactic": "command-and-control",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1568.001",
+			"tactic": "command-and-control",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1568.003",
+			"tactic": "command-and-control",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1114",
+			"tactic": "collection",
+			"color": "",
+			"comment": "win_alert_ruler.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1114.001",
+			"tactic": "collection",
+			"score": 2,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1114.002",
+			"tactic": "collection",
+			"score": 5,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1573",
+			"tactic": "command-and-control",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1573.001",
+			"tactic": "command-and-control",
+			"score": 6,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1573.002",
+			"tactic": "command-and-control",
+			"score": 5,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1499",
+			"tactic": "impact",
+			"color": "",
+			"comment": "cisco_cli_dos.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1546",
+			"tactic": "privilege-escalation",
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1546",
+			"tactic": "persistence",
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1546.001",
+			"tactic": "privilege-escalation",
+			"score": 1,
+			"color": "",
+			"comment": "win_change_default_file_association.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1546.001",
+			"tactic": "persistence",
+			"score": 1,
+			"color": "",
+			"comment": "win_change_default_file_association.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1546.003",
+			"tactic": "privilege-escalation",
+			"score": 5,
+			"color": "",
+			"comment": "win_wmi_backdoor_exchange_transport_agent.yml\nsysmon_wmi_event_subscription.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1546.003",
+			"tactic": "persistence",
+			"score": 5,
+			"color": "",
+			"comment": "win_wmi_backdoor_exchange_transport_agent.yml\nsysmon_wmi_event_subscription.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1546.004",
+			"tactic": "privilege-escalation",
+			"color": "",
+			"comment": "lnx_auditd_alter_bash_profile.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1546.004",
+			"tactic": "persistence",
+			"color": "",
+			"comment": "lnx_auditd_alter_bash_profile.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1546.007",
+			"tactic": "privilege-escalation",
+			"color": "",
+			"comment": "win_susp_netsh_dll_persistence.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1546.007",
+			"tactic": "persistence",
+			"color": "",
+			"comment": "win_susp_netsh_dll_persistence.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1546.008",
+			"tactic": "privilege-escalation",
+			"score": 5,
+			"color": "",
+			"comment": "win_install_reg_debugger_backdoor.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1546.008",
+			"tactic": "persistence",
+			"score": 5,
+			"color": "",
+			"comment": "win_install_reg_debugger_backdoor.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1546.009",
+			"tactic": "privilege-escalation",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1546.009",
+			"tactic": "persistence",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1546.011",
+			"tactic": "privilege-escalation",
+			"score": 1,
+			"color": "",
+			"comment": "win_sdbinst_shim_persistence.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1546.011",
+			"tactic": "persistence",
+			"score": 1,
+			"color": "",
+			"comment": "win_sdbinst_shim_persistence.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1546.012",
+			"tactic": "privilege-escalation",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1546.012",
+			"tactic": "persistence",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1546.013",
+			"tactic": "privilege-escalation",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1546.013",
+			"tactic": "persistence",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1480",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1480.001",
+			"tactic": "defense-evasion",
+			"score": 2,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1048",
+			"tactic": "exfiltration",
+			"color": "",
+			"comment": "net_dns_c2_detection.yml\nnet_high_null_records_requests_rate.yml\nnet_high_txt_records_requests_rate.yml\npowershell_dnscat_execution.yml\nwin_tap_installer_execution.yml\nwin_dns_exfiltration_tools_execution.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1048.003",
+			"tactic": "exfiltration",
+			"score": 6,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1041",
+			"tactic": "exfiltration",
+			"score": 12,
+			"color": "",
+			"comment": "sysmon_susp_adsi_cache_usage.yml\nwin_susp_ldap_dataexchange.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1011",
+			"tactic": "exfiltration",
+			"color": "",
+			"comment": "sysmon_ssp_added_lsa_config.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1052",
+			"tactic": "exfiltration",
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1052.001",
+			"tactic": "exfiltration",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1567",
+			"tactic": "exfiltration",
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1567.002",
+			"tactic": "exfiltration",
+			"score": 2,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1190",
+			"tactic": "initial-access",
+			"score": 8,
+			"color": "",
+			"comment": "web_cve_2019_3398_confluence.yml\nweb_cve_2018_2894_weblogic_exploit.yml\nweb_cve_2020_5902_f5_bigip.yml\nweb_cve_2020_0688_msexchange.yml\nwin_exploit_cve_2020_10189.yml\nwin_rdp_potential_cve-2019-0708.yml\nwin_susp_failed_logon_source.yml\nwin_vul_cve_2020_0688.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1203",
+			"tactic": "execution",
+			"score": 22,
+			"color": "",
+			"comment": "av_exploiting.yml\nwin_exploit_cve_2017_8759.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1212",
+			"tactic": "credential-access",
+			"color": "",
+			"comment": "win_susp_kerberos_manipulation.yml\nwin_susp_samr_pwset.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1211",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "win_task_folder_evasion.yml\nwin_exploit_cve_2017_11882.yml\nwin_susp_msmpeng_crash.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1068",
+			"tactic": "privilege-escalation",
+			"score": 8,
+			"color": "",
+			"comment": "lnx_shell_priv_esc_prep.yml\nwin_kernel_and_3rd_party_drivers_exploits_token_stealing.yml\nwin_apt_hurricane_panda.yml\nwin_exploit_cve_2019_1388.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1210",
+			"tactic": "lateral-movement",
+			"score": 1,
+			"color": "",
+			"comment": "web_exchange_cve_2020_0688_exploit.yml\nwin_rdp_potential_cve-2019-0708.yml\nwin_rdp_bluekeep_poc_scanner.yml\nsysmon_susp_rdp.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1133",
+			"tactic": "persistence",
+			"score": 11,
+			"color": "",
+			"comment": "win_susp_failed_logon_source.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1133",
+			"tactic": "initial-access",
+			"score": 11,
+			"color": "",
+			"comment": "win_susp_failed_logon_source.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1008",
+			"tactic": "command-and-control",
+			"score": 3,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1083",
+			"tactic": "discovery",
+			"score": 22,
+			"color": "",
+			"comment": "cisco_cli_discovery.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1222",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "lnx_file_or_folder_permissions.yml\nlnx_chattr_immutable_removal.yml\nwin_file_permission_modifications.yml\nwin_ad_object_writedac_access.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1222.002",
+			"tactic": "defense-evasion",
+			"score": 2,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1495",
+			"tactic": "impact",
+			"color": "",
+			"comment": "cisco_cli_dos.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1187",
+			"tactic": "credential-access",
+			"score": 2,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1200",
+			"tactic": "initial-access",
+			"score": 1,
+			"color": "",
+			"comment": "win_external_device.yml\nwin_usb_device_plugged.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1564",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1564.001",
+			"tactic": "defense-evasion",
+			"score": 4,
+			"color": "",
+			"comment": "win_attrib_hiding_files.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1564.003",
+			"tactic": "defense-evasion",
+			"score": 8,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1564.004",
+			"tactic": "defense-evasion",
+			"score": 1,
+			"color": "",
+			"comment": "powershell_ntfs_ads_access.yml\nwin_run_powershell_script_from_ads.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1564.005",
+			"tactic": "defense-evasion",
+			"score": 2,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1574",
+			"tactic": "persistence",
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1574",
+			"tactic": "privilege-escalation",
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1574",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1574.001",
+			"tactic": "persistence",
+			"score": 4,
+			"color": "",
+			"comment": "sysmon_susp_fax_dll.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1574.001",
+			"tactic": "privilege-escalation",
+			"score": 4,
+			"color": "",
+			"comment": "sysmon_susp_fax_dll.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1574.001",
+			"tactic": "defense-evasion",
+			"score": 4,
+			"color": "",
+			"comment": "sysmon_susp_fax_dll.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1574.002",
+			"tactic": "persistence",
+			"score": 11,
+			"color": "",
+			"comment": "sysmon_susp_fax_dll.yml\nwin_apt_winnti_mal_hk_jan20.yml\nwin_susp_gup.yml\nwin_susp_control_dll_load.yml\nwin_plugx_susp_exe_locations.yml\nwin_susp_dhcp_config.yml\nwin_susp_dns_config.yml\nwin_susp_dhcp_config_failed.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1574.002",
+			"tactic": "privilege-escalation",
+			"score": 11,
+			"color": "",
+			"comment": "sysmon_susp_fax_dll.yml\nwin_apt_winnti_mal_hk_jan20.yml\nwin_susp_gup.yml\nwin_susp_control_dll_load.yml\nwin_plugx_susp_exe_locations.yml\nwin_susp_dhcp_config.yml\nwin_susp_dns_config.yml\nwin_susp_dhcp_config_failed.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1574.002",
+			"tactic": "defense-evasion",
+			"score": 11,
+			"color": "",
+			"comment": "sysmon_susp_fax_dll.yml\nwin_apt_winnti_mal_hk_jan20.yml\nwin_susp_gup.yml\nwin_susp_control_dll_load.yml\nwin_plugx_susp_exe_locations.yml\nwin_susp_dhcp_config.yml\nwin_susp_dns_config.yml\nwin_susp_dhcp_config_failed.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1574.006",
+			"tactic": "persistence",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1574.006",
+			"tactic": "privilege-escalation",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1574.006",
+			"tactic": "defense-evasion",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1574.012",
+			"tactic": "persistence",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1574.012",
+			"tactic": "privilege-escalation",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1574.012",
+			"tactic": "defense-evasion",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1562",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1562.001",
+			"tactic": "defense-evasion",
+			"score": 9,
+			"color": "",
+			"comment": "cisco_cli_disable_logging.yml\naws_cloudtrail_disable_logging.yml\naws_guardduty_disruption.yml\naws_config_disable_recording.yml\nwin_defender_bypass.yml\nwin_defender_disabled.yml\nwin_user_driver_loaded.yml\nwin_susp_msmpeng_crash.yml\nwin_alert_enable_weak_encryption.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1562.002",
+			"tactic": "defense-evasion",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1562.004",
+			"tactic": "defense-evasion",
+			"score": 5,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1562.006",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "lnx_auditd_auditing_config_change.yml\nlnx_auditd_logging_config_change.yml\nwin_disable_event_logging.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1070",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "cisco_cli_clear_logs.yml\nwin_malware_notpetya.yml\nwin_shadow_copies_deletion.yml\nwin_susp_fsutil_usage.yml\nwin_susp_eventlog_clear.yml\nwin_etw_trace_evasion.yml\nwin_susp_bcdedit.yml\nwin_susp_security_eventlog_cleared.yml\nwin_susp_eventlog_cleared.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1070.001",
+			"tactic": "defense-evasion",
+			"score": 6,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1070.002",
+			"tactic": "defense-evasion",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1070.003",
+			"tactic": "defense-evasion",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1070.004",
+			"tactic": "defense-evasion",
+			"score": 29,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1070.005",
+			"tactic": "defense-evasion",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1070.006",
+			"tactic": "defense-evasion",
+			"score": 4,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1202",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "win_office_spawn_exe_from_users_directory.yml\nwin_susp_outlook.yml\nwin_office_shell.yml\nwin_susp_findstr_lnk.yml\nwin_hwp_exploits.yml\nwin_indirect_cmd.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1105",
+			"tactic": "command-and-control",
+			"score": 39,
+			"color": "",
+			"comment": "cisco_cli_moving_data.yml\nlnx_file_copy.yml\nwin_susp_desktopimgdownldr_file.yml\nwin_susp_curl_fileupload.yml\nwin_susp_msoffice.yml\nwin_susp_curl_download.yml\nwin_susp_copy_lateral_movement.yml\nwin_susp_certutil_command.yml\nwin_susp_desktopimgdownldr.yml\nsysmon_win_binary_susp_com.yml\nsysmon_win_binary_github_com.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1490",
+			"tactic": "impact",
+			"color": "",
+			"comment": "cisco_cli_modify_config.yml\nwin_shadow_copies_deletion.yml\nwin_bootconf_mod.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1056",
+			"tactic": "collection",
+			"color": "",
+			"comment": "cisco_cli_input_capture.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1056",
+			"tactic": "credential-access",
+			"color": "",
+			"comment": "cisco_cli_input_capture.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1056.001",
+			"tactic": "collection",
+			"score": 19,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1056.001",
+			"tactic": "credential-access",
+			"score": 19,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1056.002",
+			"tactic": "collection",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1056.002",
+			"tactic": "credential-access",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1056.004",
+			"tactic": "collection",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1056.004",
+			"tactic": "credential-access",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1559",
+			"tactic": "execution",
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1559.001",
+			"tactic": "execution",
+			"score": 2,
+			"color": "",
+			"comment": "win_mmc20_lateral_movement.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1559.002",
+			"tactic": "execution",
+			"score": 8,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1534",
+			"tactic": "lateral-movement",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1570",
+			"tactic": "lateral-movement",
+			"score": 4,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1557",
+			"tactic": "credential-access",
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1557",
+			"tactic": "collection",
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1557.001",
+			"tactic": "credential-access",
+			"color": "",
+			"comment": "win_susp_rottenpotato.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1557.001",
+			"tactic": "collection",
+			"color": "",
+			"comment": "win_susp_rottenpotato.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1036",
+			"tactic": "defense-evasion",
+			"score": 5,
+			"color": "",
+			"comment": "lnx_auditd_masquerading_crond.yml\nsysmon_creation_system_file.yml\nwin_susp_taskmgr_localsystem.yml\nwin_susp_svchost.yml\nwin_apt_lazarus_session_highjack.yml\nwin_renamed_binary.yml\nwin_susp_csc.yml\nwin_exploit_cve_2015_1641.yml\nwin_proc_wrong_parent.yml\nwin_susp_run_locations.yml\nwin_apt_ta17_293a_ps.yml\nwin_process_dump_rundll32_comsvcs.yml\nwin_renamed_procdump.yml\nwin_powershell_b64_shellcode.yml\nwin_renamed_jusched.yml\nwin_susp_calc.yml\nwin_susp_procdump.yml\nwin_system_exe_anomaly.yml\nwin_susp_execution_path.yml\nwin_susp_exec_folder.yml\nwin_renamed_paexec.yml\nwin_susp_prog_location_process_starts.yml\nwin_susp_taskmgr_parent.yml\nwin_susp_msiexec_cwd.yml\nwin_renamed_binary_highly_relevant.yml\nwin_new_or_renamed_user_account_with_dollar_sign.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1036.001",
+			"tactic": "defense-evasion",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1036.002",
+			"tactic": "defense-evasion",
+			"score": 4,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1036.003",
+			"tactic": "defense-evasion",
+			"score": 4,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1036.004",
+			"tactic": "defense-evasion",
+			"score": 6,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1036.005",
+			"tactic": "defense-evasion",
+			"score": 19,
+			"color": "",
+			"comment": "win_apt_lazarus_session_highjack.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1556",
+			"tactic": "credential-access",
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1556",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1556.002",
+			"tactic": "credential-access",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1556.002",
+			"tactic": "defense-evasion",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1578",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1112",
+			"tactic": "defense-evasion",
+			"score": 15,
+			"color": "",
+			"comment": "mal_azorult_reg.yml\nwin_mal_flowcloud.yml\nwin_mal_ursnif.yml\nsysmon_svchost_dll_search_order_hijack.yml\nsysmon_susp_fax_dll.yml\nsysmon_apt_oceanlotus_registry.yml\nsysmon_redmimicry_winnti_reg.yml\nsysmon_rdp_registry_modification.yml\nsysmon_etw_disabled.yml\nsysmon_reg_office_security.yml\nsysmon_dhcp_calloutdll.yml\nwin_etw_modification.yml\nwin_remote_registry_management_using_reg_utility.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1104",
+			"tactic": "command-and-control",
+			"score": 3,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1106",
+			"tactic": "execution",
+			"score": 7,
+			"color": "",
+			"comment": "win_redmimicry_winnti_proc.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1498",
+			"tactic": "impact",
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1046",
+			"tactic": "discovery",
+			"score": 13,
+			"color": "",
+			"comment": "win_vul_java_remote_debugging.yml\nwin_advanced_ip_scanner.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1135",
+			"tactic": "discovery",
+			"score": 8,
+			"color": "",
+			"comment": "win_susp_net_execution.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1040",
+			"tactic": "credential-access",
+			"score": 4,
+			"color": "",
+			"comment": "cisco_cli_net_sniff.yml\nlnx_network_sniffing.yml\nwin_pcap_drivers.yml\nwin_network_sniffing.yml\nwin_netsh_wifi_credential_harvesting.yml\nwin_netsh_packet_capture.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1040",
+			"tactic": "discovery",
+			"score": 4,
+			"color": "",
+			"comment": "cisco_cli_net_sniff.yml\nlnx_network_sniffing.yml\nwin_pcap_drivers.yml\nwin_network_sniffing.yml\nwin_netsh_wifi_credential_harvesting.yml\nwin_netsh_packet_capture.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1095",
+			"tactic": "command-and-control",
+			"score": 3,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1571",
+			"tactic": "command-and-control",
+			"score": 11,
+			"color": "",
+			"comment": "zeek_http_executable_download_from_webdav.yml\nsysmon_possible_dns_rebinding.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1003",
+			"tactic": "credential-access",
+			"score": 8,
+			"color": "",
+			"comment": "cisco_cli_collect_data.yml\nzeek_smb_converted_win_impacket_secretdump.yml\nzeek_smb_converted_win_transferring_files_with_credential_data.yml\nav_password_dumper.yml\nsysmon_ghostpack_safetykatz.yml\nsysmon_quarkspw_filedump.yml\nsysmon_cred_dump_tools_dropped_files.yml\nsysmon_lsass_memory_dump_file_creation.yml\nsysmon_lsass_memdump.yml\nsysmon_cred_dump_lsass_access.yml\nsysmon_mimikatz_trough_winrm.yml\nsysmon_mimikatz_inmemory_detection.yml\nsysmon_suspicious_dbghelp_dbgcore_load.yml\nsysmon_unsigned_image_loaded_into_lsass.yml\nsysmon_hack_wce_reg.yml\nwin_mimikatz_command_line.yml\nwin_malware_notpetya.yml\nsysmon_hack_wce.yml\nwin_hack_secutyxploded.yml\nwin_grabbing_sensitive_hives_via_reg.yml\nwin_susp_ditsnap.yml\nwin_apt_bear_activity_gtr19.yml\nwin_susp_sysvol_access.yml\nwin_cmdkey_recon.yml\nwin_susp_comsvcs_procdump.yml\nwin_shadow_copies_access_symlink.yml\nwin_process_dump_rundll32_comsvcs.yml\nwin_lsass_dump.yml\nwin_susp_procdump.yml\nwin_hack_rubeus.yml\nwin_shadow_copies_creation.yml\nwin_copying_sensitive_files_with_credential_data.yml\nwin_susp_ntdsutil.yml\nsysmon_password_dumper_lsass.yml\nsysmon_cred_dump_tools_named_pipes.yml\nwin_susp_sam_dump.yml\nwin_dcsync.yml\nwin_quarkspwdump_clearing_hive_access_history.yml\nwin_transferring_files_with_credential_data_via_network_shares.yml\nwin_dpapi_domain_masterkey_backup_attempt.yml\nwin_mal_service_installs.yml\nwin_alert_mimikatz_keywords.yml\nwin_mal_wceaux_dll.yml\nwin_dpapi_domain_backupkey_extraction.yml\nwin_lsass_access_non_system_account.yml\nwin_impacket_secretdump.yml\nwin_ad_replication_non_machine_account.yml\nwin_susp_lsass_dump_generic.yml\nwin_susp_lsass_dump.yml\nwin_alert_lsass_access.yml\nsysmon_mimikatz_detection_lsass.yml\nwin_susp_vssadmin_ntds_activity.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1003.001",
+			"tactic": "credential-access",
+			"score": 26,
+			"color": "",
+			"comment": "zeek_smb_converted_win_transferring_files_with_credential_data.yml\nav_password_dumper.yml\nwin_mimikatz_command_line.yml\nwin_susp_comsvcs_procdump.yml\nwin_process_dump_rundll32_comsvcs.yml\nwin_lsass_dump.yml\nwin_susp_procdump.yml\nsysmon_password_dumper_lsass.yml\nwin_transferring_files_with_credential_data_via_network_shares.yml\nwin_alert_mimikatz_keywords.yml\nwin_lsass_access_non_system_account.yml\nwin_susp_lsass_dump_generic.yml\nwin_susp_lsass_dump.yml\nwin_alert_lsass_access.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1003.002",
+			"tactic": "credential-access",
+			"score": 6,
+			"color": "",
+			"comment": "zeek_smb_converted_win_impacket_secretdump.yml\nzeek_smb_converted_win_transferring_files_with_credential_data.yml\nav_password_dumper.yml\nwin_mimikatz_command_line.yml\nwin_grabbing_sensitive_hives_via_reg.yml\nwin_shadow_copies_access_symlink.yml\nwin_shadow_copies_creation.yml\nwin_copying_sensitive_files_with_credential_data.yml\nsysmon_cred_dump_tools_named_pipes.yml\nwin_susp_sam_dump.yml\nwin_quarkspwdump_clearing_hive_access_history.yml\nwin_transferring_files_with_credential_data_via_network_shares.yml\nwin_alert_mimikatz_keywords.yml\nwin_impacket_secretdump.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1003.003",
+			"tactic": "credential-access",
+			"score": 2,
+			"color": "",
+			"comment": "zeek_smb_converted_win_impacket_secretdump.yml\nzeek_smb_converted_win_transferring_files_with_credential_data.yml\nwin_shadow_copies_access_symlink.yml\nwin_shadow_copies_creation.yml\nwin_copying_sensitive_files_with_credential_data.yml\nwin_susp_ntdsutil.yml\nwin_transferring_files_with_credential_data_via_network_shares.yml\nwin_impacket_secretdump.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1003.006",
+			"tactic": "credential-access",
+			"color": "",
+			"comment": "win_mimikatz_command_line.yml\nsysmon_cred_dump_tools_named_pipes.yml\nwin_dcsync.yml\nwin_alert_mimikatz_keywords.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1003.005",
+			"tactic": "credential-access",
+			"score": 4,
+			"color": "",
+			"comment": "win_cmdkey_recon.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1003.004",
+			"tactic": "credential-access",
+			"score": 8,
+			"color": "",
+			"comment": "zeek_smb_converted_win_impacket_secretdump.yml\nwin_mimikatz_command_line.yml\nsysmon_cred_dump_tools_named_pipes.yml\nwin_dpapi_domain_masterkey_backup_attempt.yml\nwin_alert_mimikatz_keywords.yml\nwin_dpapi_domain_backupkey_extraction.yml\nwin_impacket_secretdump.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1027",
+			"tactic": "defense-evasion",
+			"score": 47,
+			"color": "",
+			"comment": "sysmon_redmimicry_winnti_filedrop.yml\npowershell_invoke_obfuscation_obfuscated_iex.yml\nwin_susp_net_execution.yml\nwin_powershell_frombase64string.yml\nwin_susp_crackmapexec_powershell_obfuscation.yml\nwin_invoke_obfuscation_obfuscated_iex_commandline.yml\nwin_susp_csc_folder.yml\nwin_susp_ping_hex_ip.yml\nwin_apt_turla_comrat_may20.yml\nsysmon_ads_executable.yml\nwin_susp_sdelete.yml\nwin_susp_codeintegrity_check_failure.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1027.001",
+			"tactic": "defense-evasion",
+			"score": 6,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1027.002",
+			"tactic": "defense-evasion",
+			"score": 12,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1027.003",
+			"tactic": "defense-evasion",
+			"score": 4,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1027.004",
+			"tactic": "defense-evasion",
+			"score": 3,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1027.005",
+			"tactic": "defense-evasion",
+			"score": 7,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1137",
+			"tactic": "persistence",
+			"score": 2,
+			"color": "",
+			"comment": "sysmon_office_persistence.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1137.006",
+			"tactic": "persistence",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1137.001",
+			"tactic": "persistence",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1137.004",
+			"tactic": "persistence",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1201",
+			"tactic": "discovery",
+			"score": 2,
+			"color": "",
+			"comment": "cisco_cli_discovery.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1120",
+			"tactic": "discovery",
+			"score": 4,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1069",
+			"tactic": "discovery",
+			"score": 2,
+			"color": "",
+			"comment": "win_susp_net_recon_activity.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1069.002",
+			"tactic": "discovery",
+			"score": 7,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1069.001",
+			"tactic": "discovery",
+			"score": 3,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1566",
+			"tactic": "initial-access",
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1566.001",
+			"tactic": "initial-access",
+			"score": 50,
+			"color": "",
+			"comment": "win_susp_outlook_temp.yml\nwin_hwp_exploits.yml\nwin_susp_double_extension.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1566.002",
+			"tactic": "initial-access",
+			"score": 23,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1566.003",
+			"tactic": "initial-access",
+			"score": 5,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1542",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1542",
+			"tactic": "persistence",
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1542.002",
+			"tactic": "persistence",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1542.002",
+			"tactic": "defense-evasion",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1542.003",
+			"tactic": "persistence",
+			"score": 2,
+			"color": "",
+			"comment": "win_susp_bcdedit.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1542.003",
+			"tactic": "defense-evasion",
+			"score": 2,
+			"color": "",
+			"comment": "win_susp_bcdedit.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1057",
+			"tactic": "discovery",
+			"score": 21,
+			"color": "",
+			"comment": "cisco_cli_discovery.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1055",
+			"tactic": "defense-evasion",
+			"score": 10,
+			"color": "",
+			"comment": "lnx_auditd_ld_so_preload_mod.yml\npowershell_shellcode_b64.yml\nsysmon_malware_verclsid_shellcode.yml\nsysmon_in_memory_assembly_execution.yml\nwin_malware_dridex.yml\nwin_exploit_cve_2019_1378.yml\nwin_susp_renamed_dctask64.yml\nwin_susp_dctask64_proc_inject.yml\nwin_mavinject_proc_inj.yml\nwin_exploit_cve_2017_0261.yml\nwin_susp_svchost_no_cli.yml\nsysmon_cobaltstrike_process_injection.yml\nsysmon_cactustorch.yml\nsysmon_mal_namedpipes.yml\nsysmon_createremotethread_loadlibrary.yml\nsysmon_suspicious_remote_thread.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1055",
+			"tactic": "privilege-escalation",
+			"score": 10,
+			"color": "",
+			"comment": "lnx_auditd_ld_so_preload_mod.yml\npowershell_shellcode_b64.yml\nsysmon_malware_verclsid_shellcode.yml\nsysmon_in_memory_assembly_execution.yml\nwin_malware_dridex.yml\nwin_exploit_cve_2019_1378.yml\nwin_susp_renamed_dctask64.yml\nwin_susp_dctask64_proc_inject.yml\nwin_mavinject_proc_inj.yml\nwin_exploit_cve_2017_0261.yml\nwin_susp_svchost_no_cli.yml\nsysmon_cobaltstrike_process_injection.yml\nsysmon_cactustorch.yml\nsysmon_mal_namedpipes.yml\nsysmon_createremotethread_loadlibrary.yml\nsysmon_suspicious_remote_thread.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1055.001",
+			"tactic": "defense-evasion",
+			"score": 5,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1055.001",
+			"tactic": "privilege-escalation",
+			"score": 5,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1055.002",
+			"tactic": "defense-evasion",
+			"score": 2,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1055.002",
+			"tactic": "privilege-escalation",
+			"score": 2,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1055.013",
+			"tactic": "defense-evasion",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1055.013",
+			"tactic": "privilege-escalation",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1055.012",
+			"tactic": "defense-evasion",
+			"score": 4,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1055.012",
+			"tactic": "privilege-escalation",
+			"score": 4,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1572",
+			"tactic": "command-and-control",
+			"score": 3,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1090",
+			"tactic": "command-and-control",
+			"score": 5,
+			"color": "",
+			"comment": "win_netsh_fw_add.yml\nwin_netsh_port_fwd.yml\nwin_netsh_fw_add_susp_image.yml\nwin_rdp_reverse_tunnel.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1090.001",
+			"tactic": "command-and-control",
+			"score": 2,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1090.002",
+			"tactic": "command-and-control",
+			"score": 8,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1090.003",
+			"tactic": "command-and-control",
+			"score": 3,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1090.004",
+			"tactic": "command-and-control",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1012",
+			"tactic": "discovery",
+			"score": 7,
+			"color": "",
+			"comment": "win_apt_babyshark.yml\nwin_query_registry.yml\nwin_syskey_registry_access.yml\nwin_sam_registry_hive_handle_request.yml\nwin_remote_registry_management_using_reg_utility.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1219",
+			"tactic": "command-and-control",
+			"score": 8,
+			"color": "",
+			"comment": "av_exploiting.yml\nwin_susp_tscon_localsystem.yml\nwin_susp_ntlm_rdp.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1563",
+			"tactic": "lateral-movement",
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1021",
+			"tactic": "lateral-movement",
+			"color": "",
+			"comment": "win_impacket_lateralization.yml\nwin_susp_net_execution.yml\nwin_susp_copy_lateral_movement.yml\nwin_susp_tscon_rdp_redirect.yml\nwin_netsh_port_fwd_3389.yml\nwin_rdp_localhost_login.yml\nwin_hack_smbexec.yml\nwin_protected_storage_service_access.yml\nwin_rdp_reverse_tunnel.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1021.001",
+			"tactic": "lateral-movement",
+			"score": 20,
+			"color": "",
+			"comment": "win_netsh_allow_port_rdp.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1021.002",
+			"tactic": "lateral-movement",
+			"score": 11,
+			"color": "",
+			"comment": "zeek_smb_converted_win_lm_namedpipe.yml\nzeek_smb_converted_win_susp_psexec.yml\nwin_susp_psexec.yml\nwin_lm_namedpipe.yml\nwin_admin_share_access.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1021.003",
+			"tactic": "lateral-movement",
+			"color": "",
+			"comment": "win_mmc20_lateral_movement.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1021.004",
+			"tactic": "lateral-movement",
+			"score": 7,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1021.005",
+			"tactic": "lateral-movement",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1021.006",
+			"tactic": "lateral-movement",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1018",
+			"tactic": "discovery",
+			"score": 19,
+			"color": "",
+			"comment": "cisco_cli_discovery.yml\nwin_net_enum.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1091",
+			"tactic": "lateral-movement",
+			"score": 2,
+			"color": "",
+			"comment": "win_external_device.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1091",
+			"tactic": "initial-access",
+			"score": 2,
+			"color": "",
+			"comment": "win_external_device.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1496",
+			"tactic": "impact",
+			"score": 4,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1207",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "win_possible_dc_shadow.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1014",
+			"tactic": "defense-evasion",
+			"score": 3,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1053",
+			"tactic": "execution",
+			"color": "",
+			"comment": "cisco_cli_modify_config.yml\nzeek_smb_converted_win_atsvc_task.yml\nzeek_dce_rpc_mitre_bzar_execution.yml\nwin_rare_schtask_creation.yml\nwin_interactive_at.yml\nwin_win10_sched_task_0day.yml\nwin_powersploit_empire_schtasks.yml\nwin_susp_schtask_creation.yml\nwin_susp_crackmapexec_execution.yml\nwin_apt_turla_comrat_may20.yml\nwin_GPO_scheduledtasks.yml\nwin_rare_schtasks_creations.yml\nwin_atsvc_task.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1053",
+			"tactic": "persistence",
+			"color": "",
+			"comment": "cisco_cli_modify_config.yml\nzeek_smb_converted_win_atsvc_task.yml\nzeek_dce_rpc_mitre_bzar_execution.yml\nwin_rare_schtask_creation.yml\nwin_interactive_at.yml\nwin_win10_sched_task_0day.yml\nwin_powersploit_empire_schtasks.yml\nwin_susp_schtask_creation.yml\nwin_susp_crackmapexec_execution.yml\nwin_apt_turla_comrat_may20.yml\nwin_GPO_scheduledtasks.yml\nwin_rare_schtasks_creations.yml\nwin_atsvc_task.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1053",
+			"tactic": "privilege-escalation",
+			"color": "",
+			"comment": "cisco_cli_modify_config.yml\nzeek_smb_converted_win_atsvc_task.yml\nzeek_dce_rpc_mitre_bzar_execution.yml\nwin_rare_schtask_creation.yml\nwin_interactive_at.yml\nwin_win10_sched_task_0day.yml\nwin_powersploit_empire_schtasks.yml\nwin_susp_schtask_creation.yml\nwin_susp_crackmapexec_execution.yml\nwin_apt_turla_comrat_may20.yml\nwin_GPO_scheduledtasks.yml\nwin_rare_schtasks_creations.yml\nwin_atsvc_task.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1053.002",
+			"tactic": "execution",
+			"score": 3,
+			"color": "",
+			"comment": "zeek_smb_converted_win_atsvc_task.yml\nzeek_dce_rpc_mitre_bzar_execution.yml\nwin_interactive_at.yml\nwin_atsvc_task.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1053.002",
+			"tactic": "persistence",
+			"score": 3,
+			"color": "",
+			"comment": "zeek_smb_converted_win_atsvc_task.yml\nzeek_dce_rpc_mitre_bzar_execution.yml\nwin_interactive_at.yml\nwin_atsvc_task.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1053.002",
+			"tactic": "privilege-escalation",
+			"score": 3,
+			"color": "",
+			"comment": "zeek_smb_converted_win_atsvc_task.yml\nzeek_dce_rpc_mitre_bzar_execution.yml\nwin_interactive_at.yml\nwin_atsvc_task.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1053.005",
+			"tactic": "execution",
+			"score": 28,
+			"color": "",
+			"comment": "win_rare_schtask_creation.yml\nwin_win10_sched_task_0day.yml\nwin_powersploit_empire_schtasks.yml\nwin_susp_schtask_creation.yml\nwin_GPO_scheduledtasks.yml\nwin_rare_schtasks_creations.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1053.005",
+			"tactic": "persistence",
+			"score": 28,
+			"color": "",
+			"comment": "win_rare_schtask_creation.yml\nwin_win10_sched_task_0day.yml\nwin_powersploit_empire_schtasks.yml\nwin_susp_schtask_creation.yml\nwin_GPO_scheduledtasks.yml\nwin_rare_schtasks_creations.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1053.005",
+			"tactic": "privilege-escalation",
+			"score": 28,
+			"color": "",
+			"comment": "win_rare_schtask_creation.yml\nwin_win10_sched_task_0day.yml\nwin_powersploit_empire_schtasks.yml\nwin_susp_schtask_creation.yml\nwin_GPO_scheduledtasks.yml\nwin_rare_schtasks_creations.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1053.003",
+			"tactic": "execution",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1053.003",
+			"tactic": "persistence",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1053.003",
+			"tactic": "privilege-escalation",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1113",
+			"tactic": "collection",
+			"score": 11,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1505",
+			"tactic": "persistence",
+			"color": "",
+			"comment": "web_cve_2018_2894_weblogic_exploit.yml\ncisco_cli_modify_config.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1505.003",
+			"tactic": "persistence",
+			"score": 10,
+			"color": "",
+			"comment": "lnx_auditd_web_rce.yml\nav_webshell.yml\nwin_susp_execution_path_webserver.yml\nwin_webshell_detection.yml\nwin_webshell_spawn.yml\nwin_susp_iss_module_install.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1489",
+			"tactic": "impact",
+			"score": 1,
+			"color": "",
+			"comment": "win_service_stop.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1218",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "win_susp_psr_capture_screenshots.yml\nwin_susp_dxcap.yml\nwin_susp_openwith.yml\nwin_possible_applocker_bypass.yml\nwin_susp_dnx.yml\nwin_susp_bginfo.yml\nwin_susp_curl_start_combo.yml\nwin_susp_control_dll_load.yml\nwin_apt_babyshark.yml\nwin_susp_cdb.yml\nwin_susp_regsvr32_anomalies.yml\nwin_uac_cmstp.yml\nwin_control_panel_item.yml\nwin_mavinject_proc_inj.yml\nwin_cmstp_com_object_access.yml\nwin_mshta_spawn_shell.yml\nwin_susp_odbcconf.yml\nwin_susp_devtoolslauncher.yml\nwin_susp_esentutl_activity.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1218.011",
+			"tactic": "defense-evasion",
+			"score": 10,
+			"color": "",
+			"comment": "win_malware_notpetya.yml\nwin_crime_fireball.yml\nwin_apt_sofacy.yml\nwin_apt_tropictrooper.yml\nwin_susp_rundll32_by_ordinal.yml\nwin_apt_equationgroup_dll_u_load.yml\nwin_apt_zxshell.yml\nwin_susp_rundll32_activity.yml\nsysmon_susp_powershell_rundll32.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1218.001",
+			"tactic": "defense-evasion",
+			"score": 5,
+			"color": "",
+			"comment": "win_html_help_spawn.yml\nwin_hh_chm.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1218.003",
+			"tactic": "defense-evasion",
+			"score": 2,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1218.005",
+			"tactic": "defense-evasion",
+			"score": 5,
+			"color": "",
+			"comment": "win_hack_koadic.yml\nwin_mshta_javascript.yml\nwin_lethalhta.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1218.010",
+			"tactic": "defense-evasion",
+			"score": 8,
+			"color": "",
+			"comment": "win_apt_bluemashroom.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1218.007",
+			"tactic": "defense-evasion",
+			"score": 2,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1218.008",
+			"tactic": "defense-evasion",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1216",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1216.001",
+			"tactic": "defense-evasion",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1072",
+			"tactic": "execution",
+			"score": 3,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1072",
+			"tactic": "lateral-movement",
+			"score": 3,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1518",
+			"tactic": "discovery",
+			"score": 3,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1518.001",
+			"tactic": "discovery",
+			"score": 11,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1558",
+			"tactic": "credential-access",
+			"color": "",
+			"comment": "av_password_dumper.yml\nwin_hack_rubeus.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1558.001",
+			"tactic": "credential-access",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1558.003",
+			"tactic": "credential-access",
+			"color": "",
+			"comment": "zeek_susp_kerberos_rc4.yml\nwin_spn_enum.yml\nwin_hack_rubeus.yml\nwin_susp_rc4_kerberos.yml\nwin_register_new_logon_process_by_rubeus.yml\nwin_suspicious_outbound_kerberos_connection.yml\nwin_user_couldnt_call_privileged_service_lsaregisterlogonprocess.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1553",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1553.002",
+			"tactic": "defense-evasion",
+			"score": 14,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1553.004",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "cisco_cli_crypto_actions.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1195",
+			"tactic": "initial-access",
+			"score": 1,
+			"color": "",
+			"comment": "win_mal_octopus_scanner.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1195.001",
+			"tactic": "initial-access",
+			"color": "",
+			"comment": "win_mal_octopus_scanner.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1195.002",
+			"tactic": "initial-access",
+			"score": 2,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1082",
+			"tactic": "discovery",
+			"score": 25,
+			"color": "",
+			"comment": "cisco_cli_discovery.yml\nzeek-dce_rpc_domain_user_enumeration.yml\nwin_susp_commands_recon_activity.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1016",
+			"tactic": "discovery",
+			"score": 22,
+			"color": "",
+			"comment": "cisco_cli_discovery.yml\nwin_apt_turla_comrat_may20.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1049",
+			"tactic": "discovery",
+			"score": 14,
+			"color": "",
+			"comment": "cisco_cli_discovery.yml\nwin_susp_net_execution.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1033",
+			"tactic": "discovery",
+			"score": 18,
+			"color": "",
+			"comment": "cisco_cli_discovery.yml\nlnx_auditd_user_discovery.yml\nwin_whoami_as_system.yml\nwin_susp_whoami.yml\nwin_local_system_owner_account_discovery.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1007",
+			"tactic": "discovery",
+			"score": 7,
+			"color": "",
+			"comment": "win_query_registry.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1569",
+			"tactic": "execution",
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1569.002",
+			"tactic": "execution",
+			"score": 8,
+			"color": "",
+			"comment": "zeek_dce_rpc_mitre_bzar_execution.yml\nwin_psexesvc_start.yml\nwin_service_execution.yml\nwin_hack_smbexec.yml\nwin_mal_service_installs.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1529",
+			"tactic": "impact",
+			"score": 3,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1124",
+			"tactic": "discovery",
+			"score": 4,
+			"color": "",
+			"comment": "cisco_cli_discovery.yml\nwin_remote_time_discovery.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1080",
+			"tactic": "lateral-movement",
+			"score": 2,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1221",
+			"tactic": "defense-evasion",
+			"score": 6,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1205",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1205",
+			"tactic": "persistence",
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1205",
+			"tactic": "command-and-control",
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1537",
+			"tactic": "exfiltration",
+			"color": "",
+			"comment": "aws_ec2_vm_export_failure.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1127",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "win_workflow_compiler.yml\nwin_susp_use_of_csharp_console.yml\nwin_possible_applocker_bypass.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1127.001",
+			"tactic": "defense-evasion",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1199",
+			"tactic": "initial-access",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1552",
+			"tactic": "credential-access",
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1552.001",
+			"tactic": "credential-access",
+			"score": 7,
+			"color": "",
+			"comment": "cisco_cli_collect_data.yml\nwin_apt_bear_activity_gtr19.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1552.002",
+			"tactic": "credential-access",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1552.003",
+			"tactic": "credential-access",
+			"color": "",
+			"comment": "cisco_cli_input_capture.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1552.004",
+			"tactic": "credential-access",
+			"score": 1,
+			"color": "",
+			"comment": "cisco_cli_crypto_actions.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1552.006",
+			"tactic": "credential-access",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1550",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1550",
+			"tactic": "lateral-movement",
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1550.002",
+			"tactic": "defense-evasion",
+			"score": 4,
+			"color": "",
+			"comment": "win_pass_the_hash_2.yml\nwin_susp_ntlm_auth.yml\nwin_overpass_the_hash.yml\nwin_alert_ruler.yml\nwin_pass_the_hash.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1550.002",
+			"tactic": "lateral-movement",
+			"score": 4,
+			"color": "",
+			"comment": "win_pass_the_hash_2.yml\nwin_susp_ntlm_auth.yml\nwin_overpass_the_hash.yml\nwin_alert_ruler.yml\nwin_pass_the_hash.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1550.003",
+			"tactic": "defense-evasion",
+			"score": 3,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1550.003",
+			"tactic": "lateral-movement",
+			"score": 3,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1204",
+			"tactic": "execution",
+			"color": "",
+			"comment": "win_crime_maze_ransomware.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1204.001",
+			"tactic": "execution",
+			"score": 19,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1204.002",
+			"tactic": "execution",
+			"score": 49,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1078",
+			"tactic": "defense-evasion",
+			"score": 23,
+			"color": "",
+			"comment": "aws_root_account_usage.yml\nwin_susp_failed_logon_reasons.yml\nwin_admin_rdp_login.yml\nwin_alert_active_directory_user_control.yml\nwin_susp_interactive_logons.yml\nwin_user_added_to_local_administrators.yml\nwin_susp_failed_logon_source.yml\nwin_susp_failed_logons_single_source.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1078",
+			"tactic": "persistence",
+			"score": 23,
+			"color": "",
+			"comment": "aws_root_account_usage.yml\nwin_susp_failed_logon_reasons.yml\nwin_admin_rdp_login.yml\nwin_alert_active_directory_user_control.yml\nwin_susp_interactive_logons.yml\nwin_user_added_to_local_administrators.yml\nwin_susp_failed_logon_source.yml\nwin_susp_failed_logons_single_source.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1078",
+			"tactic": "privilege-escalation",
+			"score": 23,
+			"color": "",
+			"comment": "aws_root_account_usage.yml\nwin_susp_failed_logon_reasons.yml\nwin_admin_rdp_login.yml\nwin_alert_active_directory_user_control.yml\nwin_susp_interactive_logons.yml\nwin_user_added_to_local_administrators.yml\nwin_susp_failed_logon_source.yml\nwin_susp_failed_logons_single_source.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1078",
+			"tactic": "initial-access",
+			"score": 23,
+			"color": "",
+			"comment": "aws_root_account_usage.yml\nwin_susp_failed_logon_reasons.yml\nwin_admin_rdp_login.yml\nwin_alert_active_directory_user_control.yml\nwin_susp_interactive_logons.yml\nwin_user_added_to_local_administrators.yml\nwin_susp_failed_logon_source.yml\nwin_susp_failed_logons_single_source.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1078.002",
+			"tactic": "defense-evasion",
+			"score": 3,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1078.002",
+			"tactic": "persistence",
+			"score": 3,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1078.002",
+			"tactic": "privilege-escalation",
+			"score": 3,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1078.002",
+			"tactic": "initial-access",
+			"score": 3,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1078.003",
+			"tactic": "defense-evasion",
+			"score": 4,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1078.003",
+			"tactic": "persistence",
+			"score": 4,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1078.003",
+			"tactic": "privilege-escalation",
+			"score": 4,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1078.003",
+			"tactic": "initial-access",
+			"score": 4,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1078.004",
+			"tactic": "defense-evasion",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1078.004",
+			"tactic": "persistence",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1078.004",
+			"tactic": "privilege-escalation",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1078.004",
+			"tactic": "initial-access",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1125",
+			"tactic": "collection",
+			"score": 2,
+			"color": "",
+			"comment": "sysmon_susp_mic_cam_access.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1497",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1497",
+			"tactic": "discovery",
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1497.001",
+			"tactic": "defense-evasion",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1497.001",
+			"tactic": "discovery",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1497.002",
+			"tactic": "defense-evasion",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1497.002",
+			"tactic": "discovery",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1102",
+			"tactic": "command-and-control",
+			"score": 4,
+			"color": "",
+			"comment": "proxy_cobalt_onedrive.yml\nproxy_raw_paste_service_access.yml\nproxy_cobalt_ocsp.yml\nproxy_cobalt_amazon.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1102.001",
+			"tactic": "command-and-control",
+			"score": 5,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1102.002",
+			"tactic": "command-and-control",
+			"score": 8,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1102.003",
+			"tactic": "command-and-control",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1047",
+			"tactic": "execution",
+			"score": 17,
+			"color": "",
+			"comment": "zeek_dce_rpc_mitre_bzar_execution.yml\nwin_wmi_persistence.yml\npowershell_wmimplant.yml\nsysmon_susp_winword_wmidll_load.yml\nsysmon_wmi_module_load.yml\nwin_wmi_persistence_script_event_consumer.yml\nwin_susp_wmi_execution.yml\nwin_impacket_lateralization.yml\nwin_wmiprvse_spawning_process.yml\nwin_susp_crackmapexec_execution.yml\nwin_bypass_squiblytwo.yml\nwin_susp_wmi_login.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1220",
+			"tactic": "defense-evasion",
+			"score": 1,
+			"color": "",
+			"comment": "win_xsl_script_processing.yml",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		}
+	],
+	"gradient": {
+		"colors": [
+			"#ecf5ff",
+			"#003163"
+		],
+		"minValue": 1,
+		"maxValue": 50
+	},
+	"legendItems": [],
+	"metadata": [],
+	"showTacticRowBackground": false,
+	"tacticRowBackground": "#dddddd",
+	"selectTechniquesAcrossTactics": true,
+	"selectSubtechniquesWithParent": false
+}
